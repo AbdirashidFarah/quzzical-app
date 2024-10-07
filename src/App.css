@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+*,
+button{
+  font-family: 'Karla';
+}
+
+:root{
+  --blue-100: #D6DBF5;
+  --blue-200: #DEEBF8;
+  
+  --yellow-500: #FFFAD1;
+  --red-500: #F8BCBC;
+  --green-500: #94D7A2;
+  
+  --grey-100: #F5F7FB;
+  --grey-500: #4D5B9E;
+  --grey-900: #293264;
+  
+  --white: #FFFFFF
+}
+
+.main{
+  margin: 4em;
+  height: 100vh;
+}
+
+.body{
+  background: var(--grey-100);
+}
+
+.homepage{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.homepage > h1{
+  margin-bottom: 0;
+}
+
+.blob--1{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.blob--2{
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+hr {
+margin-top: 16px;
+border: 0;
+width: 100%;               
+background-color:#CCCCCC;
+height: 1px;
+}
+
+.question{
+  display:flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.button__section{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;    
+}
+
+.button__section > h2{
+  margin: 0;
+}
+
+.btn{
+  background: var(--grey-500);
+  color: var(--white);
+  padding: 0.75em 2em;
+  border-radius: 10px;
+  border:none;
+}
+
+
+
+.toggle-btn
+{
+  min-width: 60px;
+  color: var(--grey-900);
+  background: transparent;
+  border-radius: 8px;
+  padding: 0.25em 0.5em;
+  border: 1px solid var(--grey-900)
+}
+
+.toggle-btn--selected{
+  color: var(--grey-900);
+  background: var(--blue-200);
+  border: 1px solid transparent;
+}
+
+.toggle-btn--correct{
+  color: var(--blue-900);
+  background: var(--green-500);
+  border: 1px solid transparent;
+}
+
+.toggle-btn--selected.toggle-btn--incorrect{
+  color: var(--grey-900);
+  background: var(--red-500);
+  border: 1px solid transparent;
+  opacity: 0.5
+}
+
+.answers{
+  display:flex;
+  gap: 16px;
+}
+
+.toggle-btn.toggle-btn--incorrect{
+  opacity: 0.5
+}
+
+.toggle-btn--selected.toggle-btn--correct{
+  opacity: 1
+}
